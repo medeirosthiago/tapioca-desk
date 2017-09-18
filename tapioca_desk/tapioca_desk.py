@@ -17,10 +17,10 @@ class DeskClientAdapter(JSONAdapterMixin, TapiocaAdapter):
         params = super(DeskClientAdapter, self).get_request_kwargs(
             api_params, *args, **kwargs)
 
-        
+
         params['auth'] = HTTPBasicAuth(
             api_params.get('user'), api_params.get('password'))
-        
+
 
         return params
 
