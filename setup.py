@@ -81,7 +81,7 @@ setup(
     install_requires=requirements,
     license="MIT",
     zip_safe=False,
-    keywords='desk',
+    keywords='desk python tapioca wrapper',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
