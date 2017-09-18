@@ -10,17 +10,14 @@ from .resource_mapping import RESOURCE_MAPPING
 
 
 class DeskClientAdapter(JSONAdapterMixin, TapiocaAdapter):
-    api_root = 'https://{site}.desk.com/api/v2'
     resource_mapping = RESOURCE_MAPPING
 
     def get_request_kwargs(self, api_params, *args, **kwargs):
         params = super(DeskClientAdapter, self).get_request_kwargs(
             api_params, *args, **kwargs)
 
-
         params['auth'] = HTTPBasicAuth(
             api_params.get('user'), api_params.get('password'))
-
 
         return params
 
@@ -30,6 +27,9 @@ class DeskClientAdapter(JSONAdapterMixin, TapiocaAdapter):
     def get_iterator_next_request_kwargs(self, iterator_request_kwargs,
                                          response_data, response):
         pass
+
+    def get_api_root(self, api_params):
+        return 'https://{}.desk.com/api/v2'.format(api_params['site'])
 
 
 Desk = generate_wrapper_from_adapter(DeskClientAdapter)
