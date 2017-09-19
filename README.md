@@ -10,8 +10,9 @@ pip install tapioca-desk
 from tapioca_desk import Desk
 
 
-api = Desk(
-	user='{your-user}', password='{your-password}')
+api = Desk(user='{your-user}',
+	   password='{your-password}',
+	   site='{your-site}')
 
 ```
 
