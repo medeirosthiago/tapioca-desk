@@ -7,7 +7,7 @@ LABELS_MAPPING = {
         'methods': ['GET']
     },
     'labels_show': {
-        'resource': 'labels/{label_id}',
+        'resource': 'labels/{id}',
         'docs': 'http://dev.desk.com/API/labels/#show',
         'methods': ['GET']
     },
@@ -17,12 +17,12 @@ LABELS_MAPPING = {
         'methods': ['POST']
     },
     'labels_update': {
-        'resource': 'labels/{label_id}',
+        'resource': 'labels/{id}',
         'docs': 'http://dev.desk.com/API/labels/#update',
         'methods': ['PATCH']
     },
     'labels_delete': {
-        'resource': 'labels/{label_id}',
+        'resource': 'labels/{id}',
         'docs': 'http://dev.desk.com/API/labels/#delete',
         'methods': ['DELETE']
     },
