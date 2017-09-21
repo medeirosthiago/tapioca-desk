@@ -11,11 +11,6 @@ COMPANIES_MAPPING = {
         'docs': 'http://dev.desk.com/API/companies/#show',
         'methods': ['GET']
     },
-    'companies_show': {
-        'resource': 'companies/{id}',
-        'docs': 'http://dev.desk.com/API/companies/#show',
-        'methods': ['GET']
-    },
     'companies_create': {
         'resource': 'companies',
         'docs': 'http://dev.desk.com/API/companies/#create',

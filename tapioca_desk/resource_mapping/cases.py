@@ -64,7 +64,7 @@ CASES_MAPPING = {
     'case_message_delete': {
         'resource': 'cases/{case_id}/message',
         'docs': 'http://dev.desk.com/API/cases/#message-delete',
-        'methods': ['GET', 'PATCH', 'DELETE']
+        'methods': ['DELETE']
     },
     'case_reply_list': {
         'resource': 'cases/{case_id}/replies',

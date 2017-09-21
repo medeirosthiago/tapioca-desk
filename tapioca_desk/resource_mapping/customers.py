@@ -11,11 +11,6 @@ CUSTOMERS_MAPPING = {
         'docs': 'http://dev.desk.com/API/customers/#show',
         'methods': ['GET']
     },
-    'customers_show': {
-        'resource': 'customers/{id}',
-        'docs': 'http://dev.desk.com/API/customers/#show',
-        'methods': ['GET']
-    },
     'customers_create': {
         'resource': 'customers',
         'docs': 'http://dev.desk.com/API/customers/#create',
